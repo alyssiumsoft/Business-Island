@@ -43,6 +43,8 @@ ModelImporter:
     100070: pCube1
     100072: pCube2
     100074: Road1
+    100076: pPlane3
+    100078: pPlane4
     400000: //RootNode
     400002: pCylinder1
     400004: pPlane1
@@ -81,6 +83,8 @@ ModelImporter:
     400070: pCube1
     400072: pCube2
     400074: Road1
+    400076: pPlane3
+    400078: pPlane4
     2300000: //RootNode
     2300002: pCylinder1
     2300004: pPlane1
@@ -97,6 +101,8 @@ ModelImporter:
     2300026: polySurface1
     2300028: polySurface2
     2300030: Road1
+    2300032: pPlane3
+    2300034: pPlane4
     3300000: //RootNode
     3300002: pCylinder1
     3300004: pPlane1
@@ -113,6 +119,8 @@ ModelImporter:
     3300026: polySurface1
     3300028: polySurface2
     3300030: Road1
+    3300032: pPlane3
+    3300034: pPlane4
     4300000: pCylinder1
     4300002: pPlane1
     4300004: pPlane2
@@ -128,6 +136,8 @@ ModelImporter:
     4300024: polySurface1
     4300026: polySurface2
     4300028: Road1
+    4300030: pPlane3
+    4300032: pPlane4
     9500000: //RootNode
   materials:
     importMaterials: 1

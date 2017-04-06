@@ -1,0 +1,22 @@
+print "Starting maya loading and fbx conversion \n";
+	
+if (`file -q -exists "C:/UNITYP~1/BUSINE~2/MONOPO~1/Assets/3DMODE~1/WORLDD~1/WORLDD~1.MB"`)
+{		
+	file -o "C:/UNITYP~1/BUSINE~2/MONOPO~1/Assets/3DMODE~1/WORLDD~1/WORLDD~1.MB";
+	FBXExportEmbeddedTextures -v false;
+	// FBXExportHardEdges -v true;
+	FBXExportApplyConstantKeyReducer -v false;
+	FBXExportShowUI -v false;
+
+	print "Before fbx export\n";
+	FBXExport -f "C:/UNITYP~1/BUSINE~2/MONOPO~1/Temp/ExportedFBXFile.fbx";
+	print "after fbx export\n";
+}
+else
+	print "Could not open Maya file.";
+
+sysFile -delete "C:/UNITYP~1/BUSINE~2/MONOPO~1/Temp/CommandPipe";
+
+$donepipeKill = `fopen "C:/UNITYP~1/BUSINE~2/MONOPO~1/Temp/SyncPipeKill" "w"`;
+fwrite $donepipeKill "Done";
+fclose $donepipeKill;
